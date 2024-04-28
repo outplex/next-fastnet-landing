@@ -8,18 +8,18 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 const Hero = ({
   listUser = [
     {
-      name: "Users",
-      number: "390",
+      name: "Rápida instalación",
+      number: "",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "Locations",
-      number: "20",
+      name: "Amplia cobertura",
+      number: "",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "Server",
-      number: "50",
+      name: "Moderna Infraestructura",
+      number: "",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
@@ -36,19 +36,19 @@ const Hero = ({
             className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
             variants={scrollAnimation}>
             <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                Want anything to be easy with <strong>LaslesVPN</strong>.
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-white-500 leading-normal">
+                Disfruta de la mejor red de internet en fibra óptica con <strong>Fastnet Solutions</strong>.
               </h1>
-              <p className="text-black-500 mt-4 mb-6">
-                Provide a network for all your needs with ease and fun using
-                LaslesVPN discover interesting features from us.
+              <p className="text-white-300 mt-4 mb-6">
+                Contamos con planes residenciales y de negocios que se ajustan a tus necesidades.
               </p>
-              <ButtonPrimary>Get Started</ButtonPrimary>
+              {/* <ButtonPrimary>Get Started</ButtonPrimary> */}
             </div>
             <div className="flex w-full">
-              <motion.div className="h-full w-full" variants={scrollAnimation}>
+              <motion.div className="h-full w-full rounded-lg" variants={scrollAnimation}>
                 <Image
-                  src="/assets/Illustration1.png"
+                  className="rounded-lg"
+                  src="/assets/internet-man.jpg"
                   alt="VPN Illustrasi"
                   quality={100}
                   width={612}
