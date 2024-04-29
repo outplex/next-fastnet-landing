@@ -48,7 +48,7 @@ const Hero = ({
               <motion.div className="h-full w-full rounded-lg" variants={scrollAnimation}>
                 <Image
                   className="rounded-lg"
-                  src="/assets/internet-man.jpg"
+                  src="/assets/Nuevo_Logo_-_Fastnet Transparente.png"
                   alt="VPN Illustrasi"
                   quality={100}
                   width={612}
