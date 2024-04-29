@@ -46,9 +46,9 @@ const Pricing = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Free.png"
+                    src="/assets/wifi.png"
                     width={145}
-                    height={165}
+                    height={145}
                     alt="Free Plan"
                   />
                 </div>
@@ -90,9 +90,9 @@ const Pricing = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Standard.png"
+                    src="/assets/wifi.png"
                     width={145}
-                    height={165}
+                    height={145}
                     alt="Standard Plan"
                   />
                 </div>
@@ -137,9 +137,9 @@ const Pricing = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Premium.png"
+                    src="/assets/wifi.png"
                     width={145}
-                    height={165}
+                    height={145}
                     alt="Premium Plan"
                   />
                 </div>
@@ -177,7 +177,7 @@ const Pricing = () => {
               Contamos con una robusta infraestructura en fibra óptica en los siguientes sectores:
             </motion.p>
 
-            <div className="flex w-3/6 m-auto mt-5">
+            <div className="sm:w-5/6 md:w-5/6 flex w-4/6 m-auto mt-5">
               <ul className="list-disc flex flex-col list-inside pl-6 xl:pl-0 items-right justify-start text-left text-black-500 flex-grow">
                 <li className="relative my-1">
                   Los Frailes
@@ -212,6 +212,7 @@ const Pricing = () => {
               {/* <Maps className="w-full h-auto" /> */}
               <Image
                 src="/assets/Final.png"
+                className="rounded-lg"
                 width={1392}
                 height={735}
                 fill={true}
@@ -250,7 +251,7 @@ const Pricing = () => {
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
-        <div className="flex flex-col w-full my-16" id="testimoni">
+        <div className="hidden flex flex-col w-full my-16" id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}

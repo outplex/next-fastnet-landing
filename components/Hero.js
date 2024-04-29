@@ -18,7 +18,7 @@ const Hero = ({
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "Moderna Infraestructura",
+      name: "Fibra optica",
       number: "",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
