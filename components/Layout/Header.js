@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import LogoVPN from "../../public/assets/Logo-fastnet.svg";
+import Facebook from "../../public/assets/Icon/facebook.svg";
+import Twitter from "../../public/assets/Icon/twitter.svg";
+import Instagram from "../../public/assets/Icon/instagram.svg";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -17,16 +20,16 @@ const Header = () => {
     <>
       <header
         className={
-          "fixed top-0 w-full  z-30 bg-white-500 transition-all " +
+          " fixed top-0 w-full  z-30 bg-white-500 transition-all " +
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
         style={{ backgroundColor: "white"}}
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
-          <div className="col-start-1 col-end-2 flex items-center">
+          <div className=" col-start-1 col-end-2 flex items-center">
             <LogoVPN className="h-10 w-auto" />
           </div>
-          <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
+          <ul className="lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
               activeClass="active"
               to="about"
@@ -37,7 +40,7 @@ const Header = () => {
                 setActiveLink("about");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "hidden md:inline-block lg:inline-block px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "about"
                   ? " text-orange-500 animation-active "
                   : " text-black font-medium hover:text-orange-500 a")
@@ -55,7 +58,7 @@ const Header = () => {
                 setActiveLink("feature");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "hidden md:inline-block lg:inline-block px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "feature"
                   ? " text-orange-500 animation-active "
                   : " text-black-500 font-medium hover:text-orange-500 ")
@@ -73,7 +76,7 @@ const Header = () => {
                 setActiveLink("pricing");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "hidden md:inline-block lg:inline-block px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "pricing"
                   ? " text-orange-500 animation-active "
                   : " text-black-500 font-medium hover:text-orange-500 ")
@@ -91,7 +94,7 @@ const Header = () => {
                 setActiveLink("testimoni");
               }}
               className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                "hidden md:inline-block lg:inline-block px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "testimoni"
                   ? " text-orange-500 animation-active "
                   : " text-black-500 font-medium hover:text-orange-500 ")
@@ -99,6 +102,19 @@ const Header = () => {
             >
               Soporte
             </LinkScroll>
+            <div className="flex w-full ml-4 mb-2 -mx-2 mt-2">
+              <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                <Facebook className="h-6 w-6" />
+              </div>
+              <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                <Twitter className="h-6 w-6" />
+              </div>
+              <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                <Instagram className="h-6 w-6" />
+              </div>
+            </div>
+
+
           </ul>
 {/*           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <Link href="/">
@@ -108,7 +124,9 @@ const Header = () => {
             </Link>
             <ButtonOutline>Sign Up</ButtonOutline>
           </div> */}
+ 
         </nav>
+
       </header>
       {/* Mobile Navigation */}
 
@@ -145,7 +163,7 @@ const Header = () => {
                   d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              About
+              Servicios
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -177,7 +195,7 @@ const Header = () => {
                   d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                 />
               </svg>
-              Feature
+              Cobertura
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -209,9 +227,9 @@ const Header = () => {
                   d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              Pricing
+              Planes
             </LinkScroll>
-            <LinkScroll
+{/*             <LinkScroll
               activeClass="active"
               to="testimoni"
               spy={true}
@@ -242,7 +260,7 @@ const Header = () => {
                 />
               </svg>
               Testimonial
-            </LinkScroll>
+            </LinkScroll> */}
           </ul>
         </div>
       </nav>

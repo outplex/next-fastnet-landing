@@ -73,9 +73,9 @@ const Hero = ({
                 <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
                   <img src={listUsers.icon} className="h-6 w-6" />
                 </div>
-                <div className="flex flex-col">
+                <div className="justify-center flex flex-col">
                   <p className="text-xl text-black-600 font-bold">
-                    {listUsers.number}+
+                    {listUsers.number} 
                   </p>
                   <p className="text-lg text-black-500">{listUsers.name}</p>
                 </div>

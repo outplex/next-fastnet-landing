@@ -8,6 +8,17 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
+const places = [
+  "Los Frailes",
+  "El Almirante",
+  "La Ureña",
+  "El Bonito",
+  "Los Mameyes",
+  "Prado Oriental",
+  "Brisa Orienta",
+  "Nuevo Amanecer"
+]
+
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
@@ -153,7 +164,7 @@ const Pricing = () => {
                   <li className="relative check custom-list my-2">
                     Instalación en 24 horas
                   </li>
-                  
+
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   {/* <p className="text-2xl text-black-600 text-center mb-4 ">
@@ -173,11 +184,11 @@ const Pricing = () => {
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
               Cobertura
             </motion.h3>
-            <motion.p className="text-left leading-normal  mx-auto my-4 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
+            <motion.p className="text-justify leading-normal  mx-auto my-4 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
               Contamos con una robusta infraestructura en fibra óptica en los siguientes sectores:
-            </motion.p>
 
-            <div className="sm:w-5/6 md:w-5/6 flex w-4/6 m-auto mt-5">
+
+              {/* <div className="sm:w-5/6 md:w-5/6 flex w-4/6 m-auto mt-5">
               <ul className="list-disc flex flex-col list-inside pl-6 xl:pl-0 items-right justify-start text-left text-black-500 flex-grow">
                 <li className="relative my-1">
                   Los Frailes
@@ -204,14 +215,62 @@ const Pricing = () => {
                 </li>
               </ul>
 
+            </div> */}
+
+            <div className="flex flex-row w-full items-center justify-center"> 
+
+            <ul className="text-black-300 self-start list-inside ml-8 mt-8">
+                {places.slice(0, 4).map((place, index) => (
+                  <motion.li
+                    className="relative circle-check custom-list"
+
+                    custom={{ duration: 2 + index }}
+                    variants={scrollAnimation}
+                    key={place}
+                    whileHover={{
+                      scale: 1.1,
+                      transition: {
+                        duration: .2
+                      }
+                    }}>
+                    {place}
+                  </motion.li>
+                )
+                )}
+              </ul>
+              <ul className="text-black-300 self-start list-inside ml-8 mt-8">
+                {places.slice(4).map((place, index) => (
+                  <motion.li
+                    className="relative circle-check custom-list"
+
+                    custom={{ duration: 2 + index }}
+                    variants={scrollAnimation}
+                    key={place}
+                    whileHover={{
+                      scale: 1.1,
+                      transition: {
+                        duration: .2
+                      }
+                    }}>
+                    {place}
+                  </motion.li>
+                )
+                )}
+              </ul>
+
+
             </div>
+
+
+
+            </motion.p>
 
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
             <motion.div className="py-12 w-full px-8 mt-0" variants={scrollAnimation}>
               {/* <Maps className="w-full h-auto" /> */}
               <Image
-                src="/assets/Final.png"
+                src="/assets/final.png"
                 className="rounded-lg"
                 width={1392}
                 height={735}
