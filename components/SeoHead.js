@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 
-// Default value for some meta data
+// Default value for some meta data 
 const defaultMeta = {
   title: 'Llegámos Rápido a Todas Partes | Fastnet Solutions',
   siteName: 'Fastnet Solutions',
