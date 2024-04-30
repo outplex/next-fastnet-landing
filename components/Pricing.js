@@ -177,7 +177,7 @@ const Pricing = () => {
             </ScrollAnimationWrapper>
           </div>
         </div>
-        <div className="flex flex-col w-full my-16">
+        <div className="flex flex-col w-full ">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -222,7 +222,7 @@ const Pricing = () => {
             <ul className="text-black-300 self-start list-inside ml-8 mt-8">
                 {places.slice(0, 4).map((place, index) => (
                   <motion.li
-                    className="relative circle-check custom-list"
+                    className="relative circle-check custom-list mr-2"
 
                     custom={{ duration: 2 + index }}
                     variants={scrollAnimation}

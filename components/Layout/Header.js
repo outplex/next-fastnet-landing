@@ -102,7 +102,7 @@ const Header = () => {
             >
               Soporte
             </LinkScroll>
-            <div className="flex w-full ml-4 mb-2 -mx-2 mt-2">
+{/*             <div className="flex w-full ml-4 mb-2 -mx-2 mt-2">
               <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
                 <Facebook className="h-6 w-6" />
               </div>
@@ -112,7 +112,7 @@ const Header = () => {
               <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
                 <Instagram className="h-6 w-6" />
               </div>
-            </div>
+            </div> */}
 
 
           </ul>
