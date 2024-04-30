@@ -14,7 +14,7 @@ const defaultMeta = {
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://next-fastnet-landing.vercel.app/_next/image?url=%2Fassets%2FNuevo_Logo_-_Fastnet%20Transparente.png&w=1920&q=100',
+  image: 'https://i.postimg.cc/fL55Fx5j/Nuevo-Logo-Fastnet.jpg',
   author: 'Noel Perez'
 };
 
