@@ -43,7 +43,7 @@ const Pricing = () => {
               Disfruta de Streaming, descargas de videos en HD, juegos en líneas sin fallas, videoconferencias, fotos, videos, redes sociales y mucho más.
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-4 sm:grid-cols-3 gap- lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
@@ -64,7 +64,7 @@ const Pricing = () => {
                   />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Plan Básico 10Mbps/5Mbps
+                  Plan Básico 20Mbps/5Mbps
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
@@ -108,7 +108,7 @@ const Pricing = () => {
                   />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Plan Intermedio 20Mbps/10Mbps
+                  Plan Intermedio 35Mbps/15Mbps
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
@@ -155,7 +155,129 @@ const Pricing = () => {
                   />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Plan Pro 40Mbps/20Mbps
+                  Plan Avanzado 50Mbps/20Mbps
+                </p>
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
+                  <li className="relative check custom-list my-2">
+                    Impuestos incluidos
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    Instalación en 24 horas
+                  </li>
+
+                </ul>
+                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
+                  {/* <p className="text-2xl text-black-600 text-center mb-4 ">
+                    $12 <span className="text-black-500">/ mo</span>
+                  </p> */}
+
+                  <ButtonOutline>LO QUIERO</ButtonOutline>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+          </div>
+            <div className="grid grid-flow-row sm:grid-flow-col grid-cols-4 sm:grid-cols-3 gap- lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="h-6/8 flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: .2
+                  }
+                }}
+              >
+                <div className="p-4 lg:p-0 mt-6 lg:mt-16">
+                  <Image
+                    src="/assets/wifi.png"
+                    width={145}
+                    height={145}
+                    alt="Premium Plan"
+                  />
+                </div>
+                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                  Plan Avanzado Plus 70Mbps/30Mbps
+                </p>
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
+                  <li className="relative check custom-list my-2">
+                    Impuestos incluidos
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    Instalación en 24 horas
+                  </li>
+
+                </ul>
+                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
+                  {/* <p className="text-2xl text-black-600 text-center mb-4 ">
+                    $12 <span className="text-black-500">/ mo</span>
+                  </p> */}
+
+                  <ButtonOutline>LO QUIERO</ButtonOutline>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="h-6/8 flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: .2
+                  }
+                }}
+              >
+                <div className="p-4 lg:p-0 mt-6 lg:mt-16">
+                  <Image
+                    src="/assets/wifi.png"
+                    width={145}
+                    height={145}
+                    alt="Premium Plan"
+                  />
+                </div>
+                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                  Plan Max 100Mbps/50Mbps
+                </p>
+                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
+                  <li className="relative check custom-list my-2">
+                    Impuestos incluidos
+                  </li>
+                  <li className="relative check custom-list my-2">
+                    Instalación en 24 horas
+                  </li>
+
+                </ul>
+                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
+                  {/* <p className="text-2xl text-black-600 text-center mb-4 ">
+                    $12 <span className="text-black-500">/ mo</span>
+                  </p> */}
+
+                  <ButtonOutline>LO QUIERO</ButtonOutline>
+                </div>
+              </motion.div>
+            </ScrollAnimationWrapper>
+            <ScrollAnimationWrapper className="flex justify-center">
+              <motion.div
+                variants={scrollAnimation}
+                className="h-6/8 flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                whileHover={{
+                  scale: 1.1,
+                  transition: {
+                    duration: .2
+                  }
+                }}
+              >
+                <div className="p-4 lg:p-0 mt-6 lg:mt-16">
+                  <Image
+                    src="/assets/wifi.png"
+                    width={145}
+                    height={145}
+                    alt="Premium Plan"
+                  />
+                </div>
+                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                  Plan Max Plus 200Mbps/75Mbps
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
