@@ -52,6 +52,7 @@ const SeoHead = (props) => {
     <Head>
       <title>{meta.title}</title>
       <meta name='robots' content={meta.robots} />
+      <meta name='facebook-domain-verification' content='flu27qpkf3rq9brm0rdubl6qu0s7jk' />
       <meta content={meta.description} name='description' />
       <meta property='og:url' content={`${meta.url}${router.asPath}`} />
       <link rel='canonical' href={`${meta.url}${router.asPath}`} />
