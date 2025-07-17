@@ -43,7 +43,7 @@ const Pricing = () => {
               Disfruta de Streaming, descargas de videos en HD, juegos en líneas sin fallas, videoconferencias, fotos, videos, redes sociales y mucho más.
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-4 sm:grid-cols-3 gap- lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
@@ -176,7 +176,7 @@ const Pricing = () => {
               </motion.div>
             </ScrollAnimationWrapper>
           </div>
-            <div className="grid grid-flow-row sm:grid-flow-col grid-cols-4 sm:grid-cols-3 gap- lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
